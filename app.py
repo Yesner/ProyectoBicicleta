@@ -49,9 +49,9 @@ with exploracion:
 
 with analisis:
     st.header("Análisis descriptivo")
-    st.write("Aqui solo visualizamos como se distribuyen las rentas de bicicletas en diferentes categorias.")
+    st.write("Aquí solo visualizamos cómo se distribuyen las rentas de bicicletas en diferentes categorías.")
 
-    opcion = st.selectbox("¿Qué desea analizar?", ["Renta por mes", "Renta por hora", "Renta por estación", "Renta por día", "Renta por clima"])
+    opcion = st.selectbox("¿Qué desea analizar?", ["Rentas por mes", "Rentas por hora", "Rentas por estación", "Rentas según el clima"])
 
     datos_grafico, tipo = preparar_analisis(df, opcion)
 
